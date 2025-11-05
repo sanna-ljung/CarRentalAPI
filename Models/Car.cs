@@ -9,6 +9,7 @@
         public decimal PricePerDay { get; set; }
         public bool IsAvailable { get; set; } = true;
 
-        public List<string> ImageUrls { get; set; } = new();
+        public string ImageUrl { get; set; } = "";
+
     }
 }

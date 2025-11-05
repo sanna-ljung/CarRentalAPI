@@ -18,7 +18,7 @@ namespace CarRentalAPI.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-            
+
             builder.Entity<IdentityRole>().HasData(
                 new IdentityRole
                 {
@@ -34,8 +34,6 @@ namespace CarRentalAPI.Data
                 }
             );
 
-            var hasher = new PasswordHasher<APIUser>();
-
             builder.Entity<APIUser>().HasData(
                 new APIUser
                 {
@@ -46,7 +44,7 @@ namespace CarRentalAPI.Data
                     NormalizedUserName = "ADMIN@CARRENTALAPI.COM",
                     FirstName = "System",
                     LastName = "Admin",
-                    PasswordHash = hasher.HashPassword(null, "Admin12345!"),
+                    PasswordHash = "AQAAAAIAAYagAAAAEB9q31AjBwChziSS6WrtTTfnEBIQS0mDqt4CeMKf3njiXS/weKPIBhaAvbhR+L9ZmA==",
                     EmailConfirmed = true
                 },
                 new APIUser
@@ -58,7 +56,7 @@ namespace CarRentalAPI.Data
                     NormalizedUserName = "USER@CARRENTALAPI.COM",
                     FirstName = "System",
                     LastName = "User",
-                    PasswordHash = hasher.HashPassword(null, "User12345!"),
+                    PasswordHash = "AQAAAAIAAYagAAAAEPO3sLw+KHyXJIP4Inc2McMLpXfpfSqVSaOdjBzwwLgLuEF5TT8az5WyZjJyNjsujQ==",
                     EmailConfirmed = true
                 }
             );
