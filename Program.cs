@@ -16,7 +16,7 @@ namespace CarRentalAPI
             builder.Services.AddDbContext<CarRentalAPIContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-            builder.Services.AddIdentityCore<IdentityUser>()
+            builder.Services.AddIdentityCore<APIUser>()
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<CarRentalAPIContext>();
 
