@@ -99,7 +99,7 @@ namespace CarRentalAPI.Migrations
                         {
                             Id = "e8bf6b60-ff42-4de3-bddf-8678c327965b",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "d54c2414-8bba-4a85-a718-29bb40424289",
+                            ConcurrencyStamp = "D54C2414-8BBA-4A85-A718-29BB40424289",
                             Email = "admin@carrentalapi.com",
                             EmailConfirmed = true,
                             FirstName = "System",
@@ -107,9 +107,9 @@ namespace CarRentalAPI.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@CARRENTALAPI.COM",
                             NormalizedUserName = "ADMIN@CARRENTALAPI.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPNPzqnjA6IeLF1Pu8/XKp4wPoVXxrnhudWpPTrMYJoSbjwrCeKiAehZUYImRm0u3g==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELSY9W/d8BEJ6ToJ52C22STAFAflvh2Echlyi/Ag5MnyoZa+2yR5y4n2e2yrcWKHYQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "92c14015-1031-4a26-b151-38e48494c642",
+                            SecurityStamp = "92C14015-1031-4A26-B151-38E48494C642",
                             TwoFactorEnabled = false,
                             UserName = "admin@carrentalapi.com"
                         },
@@ -117,7 +117,7 @@ namespace CarRentalAPI.Migrations
                         {
                             Id = "bb0deafa-dc7a-4098-926e-45913f8bc65e",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4b96f166-643e-4c21-a0b6-82d10cda8025",
+                            ConcurrencyStamp = "4B96F166-643E-4C21-A0B6-82D10CDA8025",
                             Email = "user@carrentalapi.com",
                             EmailConfirmed = true,
                             FirstName = "System",
@@ -125,9 +125,9 @@ namespace CarRentalAPI.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@CARRENTALAPI.COM",
                             NormalizedUserName = "USER@CARRENTALAPI.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEOSpokKKxCZuIJ5/k4yFATOZAx6YzLMyHKd1D+LFXUUxOtAB3rEQO06UWsGrcLbcbQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOfXoQJhJZqFn3Vip/6ZSSNR65FotiWP9aF3kd1/rrY9beZ9s90dsbUYQG1MFxakNg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "8f82577d-61de-407b-b246-9aa8202970c0",
+                            SecurityStamp = "8F82577D-61DE-407B-B246-9AA8202970C0",
                             TwoFactorEnabled = false,
                             UserName = "user@carrentalapi.com"
                         });
@@ -257,13 +257,13 @@ namespace CarRentalAPI.Migrations
                         {
                             Id = "4707afb7-ec07-42de-9641-ec7e5a0631dd",
                             Name = "Admin",
-                            NormalizedName = "Admin"
+                            NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = "6f51ac3a-e8b9-42b5-9a57-9d4901e12fcf",
                             Name = "User",
-                            NormalizedName = "User"
+                            NormalizedName = "USER"
                         });
                 });
 

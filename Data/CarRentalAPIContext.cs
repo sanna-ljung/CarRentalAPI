@@ -19,28 +19,27 @@ namespace CarRentalAPI.Data
         {
             base.OnModelCreating(builder);
 
+            // Seed Roles
             builder.Entity<IdentityRole>().HasData(
                 new IdentityRole
                 {
                     Name = APIRoles.Admin,
-                    NormalizedName = APIRoles.Admin,
+                    NormalizedName = APIRoles.Admin.ToUpper(),
                     Id = "4707afb7-ec07-42de-9641-ec7e5a0631dd"
                 },
                 new IdentityRole
                 {
                     Name = APIRoles.User,
-                    NormalizedName = APIRoles.User,
+                    NormalizedName = APIRoles.User.ToUpper(),
                     Id = "6f51ac3a-e8b9-42b5-9a57-9d4901e12fcf"
                 }
             );
 
-            var adminPasswordHash = "AQAAAAIAAYagAAAAEPNPzqnjA6IeLF1Pu8/XKp4wPoVXxrnhudWpPTrMYJoSbjwrCeKiAehZUYImRm0u3g==";
-            var userPasswordHash = "AQAAAAIAAYagAAAAEOSpokKKxCZuIJ5/k4yFATOZAx6YzLMyHKd1D+LFXUUxOtAB3rEQO06UWsGrcLbcbQ==";
-            
-            // Static security stamps
-            var adminSecurityStamp = "92c14015-1031-4a26-b151-38e48494c642";
-            var userSecurityStamp = "8f82577d-61de-407b-b246-9aa8202970c0";
+            // Static password hashes generated using PasswordHasher
+            var adminPasswordHash = "AQAAAAIAAYagAAAAELSY9W/d8BEJ6ToJ52C22STAFAflvh2Echlyi/Ag5MnyoZa+2yR5y4n2e2yrcWKHYQ==";
+            var userPasswordHash = "AQAAAAIAAYagAAAAEOfXoQJhJZqFn3Vip/6ZSSNR65FotiWP9aF3kd1/rrY9beZ9s90dsbUYQG1MFxakNg==";
 
+            // Seed Users with STATIC values only
             builder.Entity<APIUser>().HasData(
                 new APIUser
                 {
@@ -52,9 +51,9 @@ namespace CarRentalAPI.Data
                     FirstName = "System",
                     LastName = "Admin",
                     PasswordHash = adminPasswordHash,
-                    SecurityStamp = adminSecurityStamp,
+                    SecurityStamp = "92C14015-1031-4A26-B151-38E48494C642", // Static GUID
                     EmailConfirmed = true,
-                    ConcurrencyStamp = "d54c2414-8bba-4a85-a718-29bb40424289"
+                    ConcurrencyStamp = "D54C2414-8BBA-4A85-A718-29BB40424289" // Static GUID
                 },
                 new APIUser
                 {
@@ -66,12 +65,13 @@ namespace CarRentalAPI.Data
                     FirstName = "System",
                     LastName = "User",
                     PasswordHash = userPasswordHash,
-                    SecurityStamp = userSecurityStamp,
+                    SecurityStamp = "8F82577D-61DE-407B-B246-9AA8202970C0", // Static GUID
                     EmailConfirmed = true,
-                    ConcurrencyStamp = "4b96f166-643e-4c21-a0b6-82d10cda8025"
+                    ConcurrencyStamp = "4B96F166-643E-4C21-A0B6-82D10CDA8025" // Static GUID
                 }
             );
 
+            // Seed User-Role relationships
             builder.Entity<IdentityUserRole<string>>().HasData(
                 new IdentityUserRole<string>
                 {
@@ -85,5 +85,7 @@ namespace CarRentalAPI.Data
                 }
             );
         }
+
+
     }
 }
