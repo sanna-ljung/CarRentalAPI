@@ -227,8 +227,8 @@ namespace CarRentalAPI.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "4707afb7-ec07-42de-9641-ec7e5a0631dd", null, "Admin", "Admin" },
-                    { "6f51ac3a-e8b9-42b5-9a57-9d4901e12fcf", null, "User", "User" }
+                    { "4707afb7-ec07-42de-9641-ec7e5a0631dd", null, "Admin", "ADMIN" },
+                    { "6f51ac3a-e8b9-42b5-9a57-9d4901e12fcf", null, "User", "USER" }
                 });
 
             migrationBuilder.InsertData(
@@ -236,8 +236,8 @@ namespace CarRentalAPI.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "bb0deafa-dc7a-4098-926e-45913f8bc65e", 0, "4b96f166-643e-4c21-a0b6-82d10cda8025", "user@carrentalapi.com", true, "System", "User", false, null, "USER@CARRENTALAPI.COM", "USER@CARRENTALAPI.COM", "AQAAAAIAAYagAAAAEOSpokKKxCZuIJ5/k4yFATOZAx6YzLMyHKd1D+LFXUUxOtAB3rEQO06UWsGrcLbcbQ==", null, false, "8f82577d-61de-407b-b246-9aa8202970c0", false, "user@carrentalapi.com" },
-                    { "e8bf6b60-ff42-4de3-bddf-8678c327965b", 0, "d54c2414-8bba-4a85-a718-29bb40424289", "admin@carrentalapi.com", true, "System", "Admin", false, null, "ADMIN@CARRENTALAPI.COM", "ADMIN@CARRENTALAPI.COM", "AQAAAAIAAYagAAAAEPNPzqnjA6IeLF1Pu8/XKp4wPoVXxrnhudWpPTrMYJoSbjwrCeKiAehZUYImRm0u3g==", null, false, "92c14015-1031-4a26-b151-38e48494c642", false, "admin@carrentalapi.com" }
+                    { "bb0deafa-dc7a-4098-926e-45913f8bc65e", 0, "4B96F166-643E-4C21-A0B6-82D10CDA8025", "user@carrentalapi.com", true, "System", "User", false, null, "USER@CARRENTALAPI.COM", "USER@CARRENTALAPI.COM", "AQAAAAIAAYagAAAAEOfXoQJhJZqFn3Vip/6ZSSNR65FotiWP9aF3kd1/rrY9beZ9s90dsbUYQG1MFxakNg==", null, false, "8F82577D-61DE-407B-B246-9AA8202970C0", false, "user@carrentalapi.com" },
+                    { "e8bf6b60-ff42-4de3-bddf-8678c327965b", 0, "D54C2414-8BBA-4A85-A718-29BB40424289", "admin@carrentalapi.com", true, "System", "Admin", false, null, "ADMIN@CARRENTALAPI.COM", "ADMIN@CARRENTALAPI.COM", "AQAAAAIAAYagAAAAELSY9W/d8BEJ6ToJ52C22STAFAflvh2Echlyi/Ag5MnyoZa+2yR5y4n2e2yrcWKHYQ==", null, false, "92C14015-1031-4A26-B151-38E48494C642", false, "admin@carrentalapi.com" }
                 });
 
             migrationBuilder.InsertData(
