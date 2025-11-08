@@ -7,6 +7,8 @@ namespace CarRentalAPI.Data
 {
     public class CarRentalAPIContext : IdentityDbContext<APIUser>
     {
+        internal object Cars;
+
         public CarRentalAPIContext(DbContextOptions<CarRentalAPIContext> options)
             : base(options)
         {
