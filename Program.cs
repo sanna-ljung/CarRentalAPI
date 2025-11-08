@@ -1,4 +1,3 @@
-
 using CarRentalAPI.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
